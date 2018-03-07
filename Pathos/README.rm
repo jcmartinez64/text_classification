@@ -1,0 +1,6 @@
+#pathos
+Es parte del proyecto de text_classification
+Es un desarrollo web basado en el framework Django. Nos permite poner en producción y usar los modelos entrenados con comentarios reales
+de usuarios. Los evalua del 1 al 5 siendo 1 lo más negativo y 5 lo más positivo. 
+
+Se han descrito vistas, modelos, plantillas, etc.

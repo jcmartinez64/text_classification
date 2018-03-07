@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+        <h5> Se han evaluado diversos modelos: de kernel lineal, Árboles de decisión, redes neuronales, etc. No obstante, la evaluación de la frase se realiza concretamente sobre los modelos LinearSVC y MLP que son los que presentan mejor rendimiento.</h5>
+        <h4>Frase a calcular el rating:</h4>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" name="submit" class="boton naranja">Enviar</button>
+        </form>
+
+         <p> <h4>La frase evaluada es:</h4>
+             {{ sentence }}
+            <h4> Con SVC obtiene un rating de:</h4>
+             {{ ratioSVC }}
+            <h4>y con MLP obtiene un rating de:</h4>
+             {{ ratioMLP }}
+        </p>
+
+    {% endblock %}
